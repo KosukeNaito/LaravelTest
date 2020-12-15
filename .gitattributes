@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+CHANGELOG.md export-ignore
+*.otf binary
+*.eot binary
+*.svg binary
+*.ttf binary
+*.woff binary
