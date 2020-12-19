@@ -61,3 +61,6 @@ Route::get('components/index', function() {
     ];
     return view('components/index', ['data'=>$data]);
 });
+
+//以下providerフォルダ
+Route::get('provider/index', 'App\Http\Controllers\ProvideController@index');

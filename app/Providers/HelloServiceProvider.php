@@ -16,6 +16,7 @@ class HelloServiceProvider extends ServiceProvider
     public function register()
     {
         //
+
     }
 
     /**
@@ -27,9 +28,7 @@ class HelloServiceProvider extends ServiceProvider
     {
         //
         View::Composer(
-            'hello.index', function($view) {
-                $view->with('view_messagae', 'composer message!');
-            }
+            'provider.index', 'App\Http\Composers\HelloComposer'
         );
     }
 }
