@@ -10,6 +10,14 @@
 @else
 <p>なにかかいてください</p>
 @endisset
+<table>
+@foreach($data as $item)
+<tr><th>{{$item['name']}}</th><td>{{$item['mail']}}</td></tr>
+@endforeach
+</table>
+<p>これは<middleware>google.com</middelware>へのリンクです。</p>
+<p>これは<middleware>yahoo.co.jp</middleware>へのりんくです。</p>
+
 <form method='POST' action='/hello/post'>
     {{csrf_field()}}
     <input type="text" name="msg">

@@ -18,7 +18,8 @@ class HelloController extends Controller
 
     public function template(Request $request) {
         $data = ['msg'=>'これはコントローラから渡されたメッセージです。',
-                 'id'=>$request->id
+                 'id'=>$request->id,
+                 'data'=>$request->data
                 ];
         return view('hello.index', $data);
     }

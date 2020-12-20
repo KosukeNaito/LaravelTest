@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\HelloMiddleware;
+use App\Http\Middleware\HelloResMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,3 +66,10 @@ Route::get('components/index', function() {
 
 //以下providerフォルダ
 Route::get('provider/index', 'App\Http\Controllers\ProvideController@index');
+
+Route::get('hello', 'App\Http\Controllers\HelloController@template')->middleware('helo');
+
+//以下Validateフォルダ
+Route::get('validate/index', 'App\Http\Controllers\ValidateController@index');
+
+Route::post('validate/index', 'App\Http\Controllers\ValidateController@post');
