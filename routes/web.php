@@ -72,4 +72,4 @@ Route::get('hello', 'App\Http\Controllers\HelloController@template')->middleware
 //以下Validateフォルダ
 Route::get('validate/index', 'App\Http\Controllers\ValidateController@index');
 
-Route::post('validate/index', 'App\Http\Controllers\ValidateController@post');
+Route::post('validate/index', 'App\Http\Controllers\ValidateController@valiPost');
