@@ -70,6 +70,10 @@ Route::get('provider/index', 'App\Http\Controllers\ProvideController@index');
 Route::get('hello', 'App\Http\Controllers\HelloController@template')->middleware('helo');
 
 //以下Validateフォルダ
-Route::get('validate/index', 'App\Http\Controllers\ValidateController@index');
+Route::get('validate/index', 'App\Http\Controllers\ValidateController@queryValiPost');
 
 Route::post('validate/index', 'App\Http\Controllers\ValidateController@valiPost');
+
+Route::get('validate/index2', 'App\Http\Controllers\ValidateController@index2');
+
+Route::post('validate/index2', 'App\Http\Controllers\ValidateController@post2');

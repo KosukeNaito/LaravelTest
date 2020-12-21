@@ -176,7 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         //以下追加したもの
-        App\Providers\HelloServiceProvider::class
+        //App\Providers\HelloServiceProvider::class,
+        App\Providers\ValidateProvider::class
     ],
 
     /*
