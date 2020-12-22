@@ -1,4 +1,4 @@
-@extends('layout.helloapp')
+@extends('layouts.helloapp')
 
 @section('content')
     <p>{{$msg}}</p>
@@ -6,7 +6,7 @@
     <p>入力に問題があります。再入力してください</p>
     @endif
     <table>
-    <form action="index" method="post">
+    <form action="cookie" method="post">
         {{csrf_field()}}
         @if ($errors->has('msg'))
         <tr><th>ERROR</th><td>{{$errors->first('msg')}}</td></tr>

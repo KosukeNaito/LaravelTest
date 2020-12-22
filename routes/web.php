@@ -77,3 +77,29 @@ Route::post('validate/index', 'App\Http\Controllers\ValidateController@valiPost'
 Route::get('validate/index2', 'App\Http\Controllers\ValidateController@index2');
 
 Route::post('validate/index2', 'App\Http\Controllers\ValidateController@post2');
+
+
+//以下Cookie関係
+Route::get('cookie', 'App\Http\Controllers\CookieController@index');
+
+Route::post('cookie', 'App\Http\Controllers\CookieController@post');
+
+
+//以下dbフォルダ
+Route::get('db/index', 'App\Http\Controllers\DBController@index2');
+
+Route::get('db/add', 'App\Http\Controllers\DBController@add');
+
+Route::post('db/add', 'App\Http\Controllers\DBController@create');
+
+Route::get('db/edit', 'App\Http\Controllers\DBController@edit');
+
+Route::post('db/edit', 'App\Http\Controllers\DBController@update');
+
+Route::get('db/del', 'App\Http\Controllers\DBController@del');
+
+Route::post('db/del', 'App\Http\Controllers\DBController@remove');
+
+Route::get('qbdb/index', 'App\Http\Controllers\DBController@qbIndex');
+
+Route::get('qbdb/show', 'App\Http\Controllers\DBController@show');
